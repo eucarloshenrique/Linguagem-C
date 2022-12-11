@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdlib.h>
 
 char* vet(int, int);
 
@@ -16,7 +17,7 @@ int main(int argc, char** argv) {
 }
 
 char* vet(int tamanho, int valorInicial) {
-    char *ptr = malloc(tamanho * sizeof(char)); // aqui você deve alocar memória na heap, e não na stack, para que ela possa ser acessada em outro escopo
+    char *ptr = malloc(tamanho * sizeof(char)); // aqui vocï¿½ deve alocar memï¿½ria na heap, e nï¿½o na stack, para que ela possa ser acessada em outro escopo
     for (int i = 0; i < tamanho; i++)
         ptr[i] = valorInicial;
     return ptr;
